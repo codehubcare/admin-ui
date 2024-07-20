@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "sass": "^1.77.8",
+    "tinymce": "^7.2.1",
+    "vite": "^5.3.4"
+  }
+}
