@@ -12,7 +12,7 @@ Publish package files.
 php artisan vendor:publish
 ```
 
-Select `Codehubcare\AdminUI` provider
+Select `Provider: Codehubcare\AdminUi\AdminUiServiceProvider ` provider
 
 Redirect to admin route
 
