@@ -19,6 +19,11 @@ class AdminUiServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/Http/Controllers' => base_path('app/Http/Controllers'),
         ]);
+
+        // Publish assets
+        $this->publishes([
+            __DIR__ . '/public' => public_path('vendor/adminui'),
+        ], 'public');
     }
 
     public function register()
