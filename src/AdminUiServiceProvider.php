@@ -12,6 +12,9 @@ class AdminUiServiceProvider extends ServiceProvider
         // Load routes
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
 
+        // Load views
+        $this->loadViewsFrom(__DIR__ . '/views', 'adminui');
+
         // Publish controllers
         $this->publishes([
             __DIR__ . '/Http/Controllers' => base_path('app/Http/Controllers'),
