@@ -40,11 +40,11 @@
         </ul>
     </nav>
     <div id="layoutSidenav">
-        @include('adminui::layout.partials.sidenav')
+        @include('adminui::layouts.partials.sidenav')
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4 pt-4">
-                    @include('adminui::layout.partials.alerts')
+                    @include('adminui::layouts.partials.alerts')
                     @yield('content')
                 </div>
             </main>

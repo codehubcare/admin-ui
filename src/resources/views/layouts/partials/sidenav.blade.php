@@ -2,7 +2,7 @@
      <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
          <div class="sb-sidenav-menu">
              <div class="nav">
-                 <a class="nav-link" href="{{ route('dashboard') }}">
+                 <a class="nav-link" href="#">
                      <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                      Dashboard
                  </a>
@@ -15,24 +15,24 @@
                  <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
                      data-bs-parent="#sidenavAccordion">
                      <nav class="sb-sidenav-menu-nested nav">
-                         <a class="nav-link" href="{{ route('posts.index') }}">All posts</a>
-                         <a class="nav-link" href="{{ route('post-categories.index') }}">Categories</a>
+                         <a class="nav-link" href="#">All posts</a>
+                         <a class="nav-link" href="#">Categories</a>
                      </nav>
                  </div>
-                 <a class="nav-link" href="{{ route('pages.index') }}">
+                 <a class="nav-link" href="#">
                      <div class="sb-nav-link-icon"><i class="fas fa-file"></i></div>
                      Pages
                  </a>
-                 <a class="nav-link" href="{{ route('users.index') }}">
+                 <a class="nav-link" href="#">
                      <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
                      Users
                  </a>
-                 <a class="nav-link" href="{{ route('settings.index') }}">
+                 <a class="nav-link" href="#">
                      <div class="sb-nav-link-icon"><i class="fas fa-gear"></i></div>
                      Settings
                  </a>
 
-                 <a class="nav-link" href="{{ route('files.index') }}">
+                 <a class="nav-link" href="#">
                      <div class="sb-nav-link-icon"><i class="fas fa-file"></i></div>
                      File Manager
                  </a>
@@ -40,7 +40,7 @@
          </div>
          <div class="sb-sidenav-footer">
              <div class="small">Logged in as:</div>
-             {{ auth()->user()->name ?? '' }}
+             Username
          </div>
      </nav>
  </div>
