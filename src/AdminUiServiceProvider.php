@@ -22,7 +22,12 @@ class AdminUiServiceProvider extends ServiceProvider
 
         // Publish assets
         $this->publishes([
-            __DIR__ . '/public' => public_path('vendor/adminui'),
+            __DIR__ . '/public/' => public_path('vendor/adminui'),
+            __DIR__ . '/../node_modules/tinymce/models/' => public_path('vendor/adminui/models'),
+            __DIR__ . '/../node_modules/tinymce/icons/' => public_path('vendor/adminui/icons'),
+            __DIR__ . '/../node_modules/tinymce/skins/' => public_path('vendor/adminui/skins'),
+            __DIR__ . '/../node_modules/tinymce/plugins/' => public_path('vendor/adminui/plugins'),
+            __DIR__ . '/../node_modules/tinymce/themes/' => public_path('vendor/adminui/themes'),
         ], 'public');
     }
 
